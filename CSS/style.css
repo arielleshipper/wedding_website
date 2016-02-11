@@ -1,0 +1,61 @@
+*{
+	margin: 0 auto;
+}
+
+.header-background{
+  background: url('../images/ArielleAndre_forweb113.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+h1{
+	font-family: "Petit Formal Script", serif;
+}
+
+ul{
+	font-family: Cantarell, sans-serif;
+	float: right;
+	clear: both;
+}
+
+nav li{
+	display: inline-block;
+}
+
+.about-us p{
+	font-family: Cantarell, sans-serif;
+	text-align: center;
+}
+
+.about-us span{
+	font-size: 10px;
+}
+
+.homepage-photo-2{
+  background: url('../images/ArielleAndre_forweb153.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.summary {
+	font-family: Cantarell, sans-serif;
+	text-align: center;
+}
+
+.wedding-detail-button{
+	border-style: solid;
+	border-width: 10px;
+}
+
+.wedding-detail-button p{
+	font-family: Cantarell, sans-serif;
+	font-size: 15px;
+}
