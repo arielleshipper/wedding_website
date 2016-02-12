@@ -1,7 +1,3 @@
-*{
-	margin: 0 auto;
-}
-
 .header-background{
   background: url('../images/ArielleAndre_forweb113.jpg');
   background-size: cover;
@@ -14,6 +10,9 @@
 
 h1{
 	font-family: "Petit Formal Script", serif;
+	width: 500px;
+	font-size: 40px;
+	padding: 40px 0 0 40px;
 }
 
 ul{
@@ -24,15 +23,36 @@ ul{
 
 nav li{
 	display: inline-block;
+	margin-right: 30px;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+}
+
+body{
+	background-color: #f2f2f2
+}
+
+.about-us h2{
+	font-family: Cantarell, sans-serif;
+	font-weight: 700;
+	margin-top: 100px;
+	text-align: center;
 }
 
 .about-us p{
 	font-family: Cantarell, sans-serif;
 	text-align: center;
+	margin: 30px 0 100px 0;
 }
+
 
 .about-us span{
 	font-size: 10px;
+	font-family: Cantarell, sans-serif;
+	font-weight: "400 italic";
 }
 
 .homepage-photo-2{
@@ -50,12 +70,21 @@ nav li{
 	text-align: center;
 }
 
-.wedding-detail-button{
-	border-style: solid;
-	border-width: 10px;
+.summary p{
+	margin: 40px;
 }
 
-.wedding-detail-button p{
+button{
 	font-family: Cantarell, sans-serif;
 	font-size: 15px;
+	border-style: solid;
+	border-color: black;
+	padding: 15px;
+	background-color: #f2f2f2;
+	margin-bottom: 20px
+}
+
+button a{
+	text-decoration: none;
+	color: black;
 }
