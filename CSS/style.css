@@ -88,3 +88,66 @@ button a{
 	text-decoration: none;
 	color: black;
 }
+
+.wedding-detail-nav{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.wedding-detail-header-1 {
+	position: relative;
+}
+
+.wedding-detail-header-1 img{
+	position: relative;
+	left: 50%;
+	margin-left: -325px;
+	height: 200px;
+	width: auto;
+}
+
+.wedding-details{
+	position: relative;
+	left: 50%;
+	margin-left: -325px;
+	font-family: Cantarell, sans-serif;
+	overflow: hidden;
+	width: 683px;
+	margin-top: 30px;
+	line-height: 1.5;
+	margin-bottom: 60px;
+}
+
+.wedding-details h3{
+	font-weight: 700;
+	font-size: 20px;
+}
+
+
+.wedding-details-p-1{
+	float: left;
+	width: 45%;
+	margin-right: 30px;
+}
+
+.wedding-details-p-2{
+	float: left;
+	width: 45%;
+}
+
+.wedding-details-map{
+	position: relative;
+}
+
+.wedding-details-map img{
+	position: relative;
+	left: 50%;
+	margin-left: -325px;
+	height: auto;
+	width: 683px;
+	margin-bottom: 60px;
+}
+
+
+
