@@ -154,4 +154,93 @@ iframe{
 	height: 1000px;
 }
 
+.travel-details-header-1 {
+	position: relative;
+}
+
+.travel-details-header-1 img{
+	position: relative;
+	left: 50%;
+	margin-left: -325px;
+	height: 200px;
+	width: auto;
+}
+
+.travel-details-header-2 {
+	position: relative;
+}
+
+.travel-details-header-2 img{
+	position: relative;
+	left: 50%;
+	margin-left: -325px;
+	height: 200px;
+	width: auto;
+}
+
+.travel-info{
+	position: relative;
+	left: 50%;
+	margin-left: -550px;
+	font-family: Cantarell, sans-serif;
+	overflow: hidden;
+	width: 1500px;
+	margin-top: 30px;
+	line-height: 1.5;
+	margin-bottom: 60px;
+}
+
+.travel-info h3{
+	font-weight: 700;
+	font-size: 20px;
+}
+
+
+.travel-info-p-1{
+	float: left;
+	width: 25%;
+	margin-right: 30px;
+}
+
+.travel-info-p-2{
+	float: left;
+	width: 25%;
+	margin-right: 30px;
+}
+
+.travel-info-p-3{
+	float: left;
+	width: 25%;
+}
+
+.hotel-info{
+	position: relative;
+	left: 50%;
+	margin-left: -325px;
+	font-family: Cantarell, sans-serif;
+	overflow: hidden;
+	width: 683px;
+	margin-top: 30px;
+	line-height: 1.5;
+	margin-bottom: 60px;
+}
+
+.hotel-info h4{
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.hotel-info-p-2{
+	float: left;
+	width: 47%;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.hotel-info-p-3{
+	float: left;
+	width: 47%;
+	margin-top: 20px;
+}
+
 
