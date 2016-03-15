@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Emillyne;
+    src: url('../Emillyne.ttf');
+}
+
 .header-background{
   background: url('../images/ArielleAndre_forweb113.jpg');
   background-size: cover;
@@ -9,9 +14,9 @@
 }
 
 h1{
-	font-family: "Petit Formal Script", serif;
-	width: 500px;
-	font-size: 40px;
+	font-family: "Emillyne","Petit Formal Script", serif;
+	width: 25%;
+	font-size: 70px;
 	padding: 40px 0 0 40px;
 }
 
@@ -24,6 +29,13 @@ ul{
 nav li{
 	display: inline-block;
 	margin-right: 30px;
+}
+
+@media only screen and (max-width: 742px){
+	nav li{
+		margin-right: 50%;
+		margin-top: 10px;
+	}
 }
 
 nav a{
@@ -60,6 +72,18 @@ body{
 	font-size: 10px;
 	font-family: Cantarell, sans-serif;
 	font-weight: "400 italic";
+}
+
+@media only screen and (max-width: 742px){
+	.about-us h2{
+		font-size: 10px;
+	}
+	.about-us p{
+		font-size: 8px;
+	}
+	.about-us span{
+		font-size: 8px;
+	}
 }
 
 .homepage-photo-2{
@@ -103,16 +127,24 @@ button a{
 }
 
 .wedding-detail-header-1 {
-	position: relative;
+	background: url('../images/travel-details-header-1.jpg');
+	background-size: cover;
+	background-position: center;
+  	background-attachment: fixed;
+  	width: 100%;
+  	height: 500px;
+  	overflow: hidden;
 }
 
-.wedding-detail-header-1 img{
-	position: relative;
-	left: 50%;
-	margin-left: -325px;
-	height: 200px;
-	width: auto;
+.wedding-detail-header-1 p{
+	font-family: Cantarell, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	line-height: 500px;
 }
+
 
 .wedding-details{
 	position: relative;
@@ -126,9 +158,24 @@ button a{
 	margin-bottom: 60px;
 }
 
+
 .wedding-details h3{
 	font-weight: 700;
 	font-size: 20px;
+}
+
+@media only screen and (max-width: 716px){
+	.wedding-details h3{
+		font-size: 17px;
+	}
+
+	.wedding-details-p-1{
+		font-size: 12px;
+	}
+
+	.wedding-details-p-2{
+		font-size: 12px;
+	}
 }
 
 
@@ -162,27 +209,41 @@ iframe{
 }
 
 .travel-details-header-1 {
-	position: relative;
+  background: url('../images/travel-details-header-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
 
-.travel-details-header-1 img{
-	position: relative;
-	left: 50%;
-	margin-left: -325px;
-	height: 200px;
-	width: auto;
+.travel-details-header-1 p{
+	font-family: Cantarell, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	line-height: 500px;
 }
 
 .travel-details-header-2 {
-	position: relative;
+	background: url('../images/travel-details-header-1.jpg');
+	background-size: cover;
+	background-position: center;
+  	background-attachment: fixed;
+  	width: 100%;
+  	height: 500px;
+  	overflow: hidden;
 }
 
-.travel-details-header-2 img{
-	position: relative;
-	left: 50%;
-	margin-left: -325px;
-	height: 200px;
-	width: auto;
+.travel-details-header-2 p{
+	font-family: Cantarell, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	line-height: 500px;
 }
 
 .travel-info{
