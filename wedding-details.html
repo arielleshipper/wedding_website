@@ -9,19 +9,39 @@
 	<meta name="description" content="Arielle Shipper and Andre Plaut Wedding">
 	<meta name="keywords" content="Arielle Shipper, Andre Plaut, wedding">
 	<meta name="author" content="Arielle Shipper and Andre Plaut">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="JS/parallax.js"></script>
 
 </head>
 
 <header>
 
+<div class="hamburger">
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+</div>
+
+<div class="hamburger-drop-down">
+	<ul>
+		<li><a href="wedding-details.html">Wedding Details</a></li>
+		<li><a href="travel.html">Travel Info</a></li>
+		<li><a href="registry.html">Registry</a></li>
+		<li><a href="rsvp.html">RSVP</a></li>
+	</ul>
+</div>
+
+<div class="logo">
+	<a href="index.html">arielle &amp; andre</a>
+</div>
+
 <div class="wedding-detail-nav">
 
-<h1>arielle &amp; andre</h1>
 
 <nav>
 <ul>
 	<li class="nav-list"><a href="wedding-details.html">Wedding Details</a></li>
-	<li class="nav-list"><a href="travel-info.html">Travel Info</a></li>
+	<li class="nav-list"><a href="travel.html">Travel Info</a></li>
 	<li class="nav-list"><a href="registry.html">Registry</a></li>
 	<li class="nav-list"><a href="rsvp.html">RSVP</a></li>
 </ul>
@@ -31,17 +51,19 @@
 
 <body>
 
-<div class="wedding-detail-header-1">
+<div class="wedding-detail-header-1" data-parallax="scroll" data-image-src="images/wedding-detail-header-1.jpg">
 	<p>The Venue</p>
 </div>
 
 <div class="wedding-details">
 
 	<div class="wedding-details-p-1">
-	<p><h3>The Reception</h3><br>Both the ceremony and the reception will be held at Gallow Green, a rooftop garden and restaurant in Chelsea. A cocktail hour with hors d&#39;oeuvres, dinner, and dancing will follow the ceremony. <br>If you don&#39;t turn into a pumpkin by 11pm, we&#39;ll also be holding an after-party downstairs at The Heath with reserved seating, live music, and lots of bubbly.</p></div>
+	<h3>The Reception</h3>
+	<p>Both the ceremony and the reception will be held at Gallow Green, a rooftop garden and restaurant in Chelsea. A cocktail hour with hors d&#39;oeuvres, dinner, and dancing will follow the ceremony. If you don&#39;t turn into a pumpkin by 11pm, we&#39;ll also be holding an after-party downstairs at The Heath with reserved seating, live music, and lots of bubbly.</p></div>
 
 	<div class="wedding-details-p-2">
-	<p><h3>Attire</h3><br>Gallow Green is an indoor-outdoor venue with a whimsical, rustic vibe. We suggest smart-casual garden-appropriate attire with layers. Though we&#39;ll be fully sheltered from any inclement weather, the temperature may dip at night. Ditch the heels and bring your dancing shoes&#8211;there&#39;s a set of railroad tracks and some uneven paving stones that you&#39;ll feel more comfortable navigating in flats.</p></div>
+	<h3>Attire</h3>
+	<p>Gallow Green is an indoor-outdoor venue with a whimsical, rustic vibe. We suggest smart-casual garden-appropriate attire with layers. Though we&#39;ll be fully sheltered from any inclement weather, the temperature may dip at night. Ditch the heels and bring your dancing shoes&#8211;there&#39;s a set of railroad tracks and some uneven paving stones that you&#39;ll feel more comfortable navigating in flats.</p></div>
 	</div>
 
 </div>
@@ -50,6 +72,17 @@
 <img src="images/wedding-details-map.jpg">
 </div>
 
+<script type="text/javascript">
+
+// on click - drop down to appear
+
+$('.hamburger').on('click', function(){
+	$('.hamburger-drop-down li').toggle();
+	console.log("click");
+});
+// on second click - drop down to disappear
+
+</script>
 
 </body>
 

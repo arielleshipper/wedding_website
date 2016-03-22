@@ -3,6 +3,12 @@
     src: url('../Emillyne.ttf');
 }
 
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
 .header-background{
   background: url('../images/ArielleAndre_forweb113.jpg');
   background-size: cover;
@@ -11,13 +17,18 @@
   width: 100%;
   height: 800px;
   overflow: hidden;
+  background: transparent;
 }
 
-h1{
+.logo{
 	font-family: "Emillyne","Petit Formal Script", serif;
-	width: 25%;
 	font-size: 70px;
 	padding: 40px 0 0 40px;
+}
+
+.logo a{
+	text-decoration: none;
+	color: black;
 }
 
 ul{
@@ -31,14 +42,47 @@ nav li{
 	margin-right: 30px;
 }
 
-@media only screen and (max-width: 742px){
-	nav li{
-		margin-right: 50%;
-		margin-top: 10px;
-	}
+nav li a:hover{
+	color: #a6a6a6;
 }
 
+
 nav a{
+	text-decoration: none;
+	color: black;
+}
+
+.hamburger {
+	float: right;
+	margin: 40px 40px 0 0;
+	display: none;
+	cursor: pointer;
+}
+
+.hamburger-lines {
+	color: black;
+	margin: 4px 0;
+	display: block;
+	background: rgb(0,0,0);
+	z-index: 99;
+	width: 45px;
+	height: 3px;
+	border-radius: 25px;
+}
+
+.hamburger-drop-down {
+	line-height: 30px;
+	text-align: right;
+	text-decoration: none;
+	color: black;
+}
+
+.hamburger-drop-down li{
+	display: block;
+	display: none;
+}
+
+.hamburger-drop-down a{
 	text-decoration: none;
 	color: black;
 }
@@ -74,17 +118,6 @@ body{
 	font-weight: "400 italic";
 }
 
-@media only screen and (max-width: 742px){
-	.about-us h2{
-		font-size: 10px;
-	}
-	.about-us p{
-		font-size: 8px;
-	}
-	.about-us span{
-		font-size: 8px;
-	}
-}
 
 .homepage-photo-2{
   background: url('../images/ArielleAndre_forweb153.jpg');
@@ -94,6 +127,7 @@ body{
   width: 100%;
   height: 800px;
   overflow: hidden;
+  background: transparent;
 }
 
 .summary {
@@ -120,6 +154,10 @@ button a{
 	color: black;
 }
 
+button a:hover{
+	color: #a6a6a6;
+}
+
 .wedding-detail-nav{
 	width: 100%;
 	height: 200px;
@@ -127,13 +165,14 @@ button a{
 }
 
 .wedding-detail-header-1 {
-	background: url('../images/travel-details-header-1.jpg');
+	background: url('../images/wedding-detail-header-1.jpg');
 	background-size: cover;
 	background-position: center;
   	background-attachment: fixed;
   	width: 100%;
   	height: 500px;
   	overflow: hidden;
+  	margin-bottom: 10%;
 }
 
 .wedding-detail-header-1 p{
@@ -147,15 +186,14 @@ button a{
 
 
 .wedding-details{
-	position: relative;
-	left: 50%;
-	margin-left: -325px;
 	font-family: Cantarell, sans-serif;
-	overflow: hidden;
-	width: 683px;
-	margin-top: 30px;
-	line-height: 1.5;
-	margin-bottom: 60px;
+	position: relative;
+	top: 50%;
+	/*left: 50%;
+	transform: translate(-50%, -50%);*/
+	width: 50%;
+	overflow: auto;
+	margin:0 auto;
 }
 
 
@@ -164,43 +202,38 @@ button a{
 	font-size: 20px;
 }
 
-@media only screen and (max-width: 716px){
-	.wedding-details h3{
-		font-size: 17px;
-	}
 
-	.wedding-details-p-1{
-		font-size: 12px;
-	}
-
-	.wedding-details-p-2{
-		font-size: 12px;
-	}
+.wedding-details-p-1 h3{
+	padding-bottom: 15px;
 }
 
+.wedding-details-p-2 h3{
+	padding-bottom: 15px;
+}
 
 .wedding-details-p-1{
 	float: left;
 	width: 45%;
-	margin-right: 30px;
+	padding: 2%;
 }
 
 .wedding-details-p-2{
 	float: left;
 	width: 45%;
+	padding: 2%;
 }
 
 .wedding-details-map{
 	position: relative;
+	padding-top: 100px;
+	margin: 0 auto;
+	width: 60%;
 }
 
 .wedding-details-map img{
 	position: relative;
-	left: 50%;
-	margin-left: -325px;
-	height: auto;
-	width: 683px;
-	margin-bottom: 60px;
+	max-width: 100%;
+	margin-bottom: 10%;
 }
 
 iframe{
@@ -248,14 +281,14 @@ iframe{
 
 .travel-info{
 	position: relative;
-	left: 50%;
-	margin-left: -550px;
+	margin: 0 auto;
 	font-family: Cantarell, sans-serif;
-	overflow: hidden;
-	width: 1500px;
+	width: 100%;
+	max-width: 1300px;
 	margin-top: 30px;
 	line-height: 1.5;
 	margin-bottom: 60px;
+	overflow: hidden;
 }
 
 .travel-info h3{
@@ -266,31 +299,32 @@ iframe{
 
 .travel-info-p-1{
 	float: left;
-	width: 25%;
-	margin-right: 30px;
+	width: 33.3%;
+	padding-right: 30px;
 }
 
 .travel-info-p-2{
 	float: left;
-	width: 25%;
-	margin-right: 30px;
+	width: 33.3%;
+	padding-right: 30px;
 }
 
 .travel-info-p-3{
 	float: left;
-	width: 25%;
+	width: 33.3%;
 }
 
 .hotel-info{
 	position: relative;
-	left: 50%;
-	margin-left: -325px;
+	margin: 0 auto;
 	font-family: Cantarell, sans-serif;
 	overflow: hidden;
-	width: 683px;
+	width: 100%;
+	max-width: 1300px;
 	margin-top: 30px;
 	line-height: 1.5;
 	margin-bottom: 60px;
+	text-align: center;
 }
 
 .hotel-info h4{
@@ -300,27 +334,32 @@ iframe{
 
 .hotel-info-p-2{
 	float: left;
-	width: 47%;
-	margin-right: 20px;
+	width: 50%;
 	margin-top: 20px;
 }
 
 .hotel-info-p-3{
 	float: left;
-	width: 47%;
+	width: 50%;
 	margin-top: 20px;
 }
 
-.RSVP-photo{
+.rsvp-nav{
 	position: relative;
-	left: 50%;
-	margin-left: -425px;
+	top: 60px;
+}
+
+.RSVP-photo {
+	position: relative;
+	top: 30px;
+	width: 100%;
 }
 
 .RSVP-photo img{
 	position: relative;
-	margin: 100px 0 50px 0;
-
+	width: 33.3%;
+	margin: 0 auto;
+	display: block;
 }
 
 .RSVP-hed p{
@@ -332,6 +371,20 @@ iframe{
 .RSVP-form{
 	position: relative;
 	font-family: Cantarell, sans-serif;
+}
+
+.google-form{
+	margin-bottom: 5%;
+}
+
+.contact-form{
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.contact-form span{
+	font-weight: 400;
+	font-style: italic;
 }
 
 form{
@@ -353,6 +406,109 @@ form{
 
 #contact-us{
 	margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 742px){
+	.logo{
+		width: 75%;
+	}
+
+	.about-us h2{
+		font-size: 18px;
+	}
+	.about-us p{
+		font-size: 16px;
+	}
+	.about-us span{
+		font-size: 16px;
+	}
+
+	.nav-list {
+		display: none;
+	}
+
+	.hamburger{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 716px){
+	.wedding-details h3{
+		font-size: 18px;
+	}
+
+	.wedding-details-p-1{
+		font-size: 16px;
+		display: block;
+		float: none;
+		width: 100%;
+	}
+
+	.wedding-details-p-2{
+		font-size: 16px;
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 582px){
+	.travel-details-header-1 p{
+		font-size: 30px;
+	}
+
+	.travel-info h3{
+	font-size: 15px;
+}
+
+
+	.travel-info-p-1{
+	float: none;
+	display: block;
+	width: 100%;
+	margin-right: 0;
+	font-size: 12px;
+}
+
+	.travel-info-p-2{
+	float: none;
+	display: block;
+	width: 100%;
+	margin-right: 0;
+	font-size: 12px;
+}
+
+	.travel-info-p-3{
+	float: none;
+	display: block;
+	width: 100%;
+	font-size: 12px;
+}
+	.travel-details-header-2 p{
+		font-size: 30px;
+	}
+
+	.hotel-info-p-1{
+		font-size: 12px;
+	}
+
+	.hotel-info-p-2{
+		float: none;
+		display: block;
+		width: 100%;
+		margin-right: 0;
+		font-size: 12px;
+	}
+
+	.hotel-info-p-3{
+		float: none;
+		display: block;
+		width: 100%;
+		margin-right: 0;
+		font-size: 12px;
+	}
 }
 
 

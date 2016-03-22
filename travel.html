@@ -9,19 +9,38 @@
 	<meta name="description" content="Arielle Shipper and Andre Plaut Wedding">
 	<meta name="keywords" content="Arielle Shipper, Andre Plaut, wedding">
 	<meta name="author" content="Arielle Shipper and Andre Plaut">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="JS/parallax.js"></script>
 
 </head>
 
 <header>
 
+<div class="hamburger">
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+</div>
+
+<div class="hamburger-drop-down">
+	<ul>
+		<li><a href="wedding-details.html">Wedding Details</a></li>
+		<li><a href="travel.html">Travel Info</a></li>
+		<li><a href="registry.html">Registry</a></li>
+		<li><a href="rsvp.html">RSVP</a></li>
+	</ul>
+</div>
+
 <div class="wedding-detail-nav">
 
-<h1>arielle &amp; andre</h1>
+<div class="logo">
+	<a href="index.html">arielle &amp; andre</a>
+</div>
 
 <nav>
 <ul>
 	<li class="nav-list"><a href="wedding-details.html">Wedding Details</a></li>
-	<li class="nav-list"><a href="travel-info.html">Travel Info</a></li>
+	<li class="nav-list"><a href="travel.html">Travel Info</a></li>
 	<li class="nav-list"><a href="registry.html">Registry</a></li>
 	<li class="nav-list"><a href="rsvp.html">RSVP</a></li>
 </ul>
@@ -31,7 +50,7 @@
 
 <body>
 
-<div class="travel-details-header-1">
+<div class="travel-details-header-1" data-parallax="scroll" data-image-src="images/travel-details-header-1.jpg">
 	<p>Get to New York City</p>
 </div>
 
@@ -56,7 +75,7 @@
 
 </div>
 
-<div class="travel-details-header-2">
+<div class="travel-details-header-2" data-parallax="scroll" data-image-src="images/travel-details-header-2.jpg">
 	<p>Stay in New York City</p>
 </div>
 
@@ -84,6 +103,17 @@
 
 </div>
 
+<script type="text/javascript">
+
+// on click - drop down to appear
+
+$('.hamburger').on('click', function(){
+	$('.hamburger-drop-down li').toggle();
+	console.log("click");
+});
+// on second click - drop down to disappear
+
+</script>
 
 </body>
 

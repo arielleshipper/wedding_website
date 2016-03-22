@@ -16,17 +16,34 @@
 
 <header>
 
-<div class="header-background" data-parallax="scroll">
-
-<h1>arielle &amp; andre</h1>
+<div class="header-background" data-parallax="scroll" data-image-src="images/ArielleAndre_forweb113.jpg">
 
 <nav>
+
+<div class="hamburger">
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+</div>
+
+<div class="hamburger-drop-down">
+	<ul>
+		<li><a href="wedding-details.html">Wedding Details</a></li>
+		<li><a href="travel.html">Travel Info</a></li>
+		<li><a href="registry.html">Registry</a></li>
+		<li><a href="rsvp.html">RSVP</a></li>
+	</ul>
+</div>
+
+<h1 class="logo">arielle &amp; andre</h1>
+
 <ul>
 	<li class="nav-list"><a href="wedding-details.html">Wedding Details</a></li>
-	<li class="nav-list"><a href="travel-info.html">Travel Info</a></li>
+	<li class="nav-list"><a href="travel.html">Travel Info</a></li>
 	<li class="nav-list"><a href="registry.html">Registry</a></li>
 	<li class="nav-list"><a href="rsvp.html">RSVP</a></li>
 </ul>
+
 </nav>
 
 </div>
@@ -49,7 +66,7 @@
 
 </div>
 
-<div class="homepage-photo-2" data-parallax="scroll">
+<div class="homepage-photo-2" data-parallax="scroll" data-image-src="images/ArielleAndre_forweb153.jpg">
 </div>
 
 <div class="summary">
@@ -58,10 +75,21 @@
 		Gallow Green<br><br>
 		New York, New York</p>
 
-	<button><a href="/wedding-details.html">GO TO WEDDING DETAILS</a></button>
+	<button><a href="wedding-details.html">GO TO WEDDING DETAILS</a></button>
 
 </div>
 
+<script type="text/javascript">
+
+// on click - drop down to appear
+
+$('.hamburger').on('click', function(){
+	$('.hamburger-drop-down li').toggle();
+	console.log("click");
+});
+// on second click - drop down to disappear
+
+</script>
 
 </body>
 

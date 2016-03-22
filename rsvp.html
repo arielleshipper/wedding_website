@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Arielle &amp; Andre's Wedding</title>
+	<title>RSVP</title>
 	<link href='https://fonts.googleapis.com/css?family=Cantarell:400,400italic,700|Petit+Formal+Script' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="css/normalize.css">
 	<link type="text/css" rel="stylesheet" href="css/reset.css">
@@ -14,25 +14,45 @@
 
 </head>
 
+<body>
+
 <header>
 
-<h1>arielle &amp; andre</h1>
+<div class="hamburger">
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+<span class="hamburger-lines"></span>
+</div>
 
-<nav>
+<div class="hamburger-drop-down">
+	<ul>
+		<li><a href="wedding-details.html">Wedding Details</a></li>
+		<li><a href="travel.html">Travel Info</a></li>
+		<li><a href="registry.html">Registry</a></li>
+		<li><a href="rsvp.html">RSVP</a></li>
+	</ul>
+</div>
+
+<nav class="rsvp-nav">
 <ul>
 	<li class="nav-list"><a href="wedding-details.html">Wedding Details</a></li>
-	<li class="nav-list"><a href="travel-info.html">Travel Info</a></li>
+	<li class="nav-list"><a href="travel.html">Travel Info</a></li>
 	<li class="nav-list"><a href="registry.html">Registry</a></li>
 	<li class="nav-list"><a href="rsvp.html">RSVP</a></li>
 </ul>
+
 </nav>
+
+<div class="logo" >
+	<a href="index.html">arielle &amp; andre</a>
+</div>
 
 </header>
 
-<body>
-
 <div class="RSVP-photo">
+	<center>
 	<img src="images/ArielleAndre_forweb016.jpg">
+	</center>
 </div>
 
 <div class="RSVP-hed">
@@ -42,15 +62,33 @@
 
 <div class="RSVP-form">
 
-<iframe src="https://docs.google.com/forms/d/1UXvGcy5NOEvPbhn5z3dv2RR6oD07Gv8N59WxkH-PuT0/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe class="google-form" src="https://docs.google.com/forms/d/1UXvGcy5NOEvPbhn5z3dv2RR6oD07Gv8N59WxkH-PuT0/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<div="form">
+<p class="contact-form">Questions? Comments? Want to chat about puppies? <span>We're here for you.</span></p>
 
 <form>
-<form action="newsletter.php" action="post">
-<label for="contact-us">Contact Us</label>
-<input type="text" name="contact" id="contact-us" placeholder="your email address">
-<input type="submit" name="contact" id="contact-us" value="submit">
+	<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form_response">
+	<input type="hidden" name="to_email" value="kimberlygoulbourne@gmail.com" />
+	<input type="hidden" name="to_name" value="Kim G." />
+	<input type="hidden" name="to_subject" value="A Message From Your Website" />
+	<label for="contact-us">Contact Us</label>
+	<input type="text" name="contact" id="contact-us" placeholder="your email address">
+	<input type="submit" name="contact" id="contact-us" value="submit">
 </form>
+</div>
 
+<script type="text/javascript">
+
+// on click - drop down to appear
+
+$('.hamburger').on('click', function(){
+	$('.hamburger-drop-down li').toggle();
+	console.log("click");
+});
+// on second click - drop down to disappear
+
+</script>
 
 </body>
 
